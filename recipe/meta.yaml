@@ -1,5 +1,5 @@
 {% set name = "sicor" %}
-{% set version = "0.14.6.1" %}
+{% set version = "0.14.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
-  sha256: e790c84b6b139a6e13a9a8bafe5969e28f4c047634d01848b9f202434c2f2fab
+  sha256: 654a1f99e3ee197ea2abaa3d77402a3d773994415d8958b4e8827b99ff9f4b03
 
 build:
   number: 0
@@ -23,12 +23,12 @@ requirements:
     - pytables
     - h5py
     - numba
-    - llvmlite
     - pyfftw
     - pygrib
     - scikit-learn
   run:
     - arosics
+    - cachetools
     - cerberus
     - dicttoxml
     - dill
@@ -38,7 +38,6 @@ requirements:
     - h5py
     - iso8601
     - jsmin
-    - llvmlite
     - matplotlib-base
     - mpld3
     - netcdf4
@@ -53,6 +52,7 @@ requirements:
     - pyrsr
     - pytables
     - python >=3.6
+    - py-tools-ds
     - scikit-image
     - scikit-learn
     - scipy
