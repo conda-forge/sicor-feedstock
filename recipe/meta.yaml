@@ -52,7 +52,7 @@ requirements:
     - pyrsr
     - pytables
     - python >=3.6
-    - py_tools_ds
+    - py-tools-ds
     - scikit-image
     - scikit-learn
     - scipy
