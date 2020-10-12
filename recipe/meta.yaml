@@ -32,6 +32,7 @@ requirements:
     - cerberus
     - dicttoxml
     - dill
+    - ecmwf-api-client
     - gdal
     - geoarray
     - glymur
@@ -47,12 +48,14 @@ requirements:
     - pillow
     - pint
     - psutil
+    - pygrib
     - pyprind
     - pyproj
     - pyrsr
     - pytables
     - python >=3.6
     - py-tools-ds
+    - requests
     - scikit-image
     - scikit-learn
     - scipy
