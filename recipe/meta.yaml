@@ -61,6 +61,7 @@ requirements:
     - scipy
     - sympy
     - tqdm
+    - xlrd
 
 test:
   imports:
