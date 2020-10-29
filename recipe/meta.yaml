@@ -34,6 +34,7 @@ requirements:
     - dill
     - ecmwf-api-client
     - gdal
+    - gdown
     - geoarray
     - glymur
     - h5py
