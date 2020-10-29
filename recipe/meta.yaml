@@ -1,5 +1,5 @@
 {% set name = "sicor" %}
-{% set version = "0.15.1" %}
+{% set version = "0.15.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
-  sha256: f7da6b13fc46c2fdb99b14df97438b9ea732b5f9d44e95544859277c9fb8b50f
+  sha256: c9236f65aa84c7a1ccdc6673e0db379a8d15b08d2cb6b8ed0e380266f21cdab4
 
 build:
   number: 0
@@ -34,6 +34,7 @@ requirements:
     - dill
     - ecmwf-api-client
     - gdal
+    - gdown
     - geoarray
     - glymur
     - h5py
