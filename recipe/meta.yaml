@@ -9,6 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
   sha256: da1895bc0c6a7c3ea71959833e5d1fc30410dc69686949008fd33623a48e3973
 
+
 build:
   number: 0
   noarch: python
