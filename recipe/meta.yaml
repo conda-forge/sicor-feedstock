@@ -33,6 +33,7 @@ requirements:
     - dicttoxml
     - dill
     - ecmwf-api-client
+    - folium >=0.6.0,!=0.12.0
     - gdal
     - gdown
     - geoarray
