@@ -47,6 +47,7 @@ requirements:
     - netcdf4
     - numba
     - numpy
+    - openpyxl
     - pandas
     - pillow
     - pint
@@ -64,7 +65,6 @@ requirements:
     - scipy
     - sympy
     - tqdm
-    - xlrd
 
 test:
   imports:
