@@ -28,7 +28,7 @@ requirements:
     - pygrib
     - scikit-learn <=0.24.0
   run:
-    - arosics
+    - arosics >=1.2.4
     - cachetools
     - cerberus
     - dicttoxml
