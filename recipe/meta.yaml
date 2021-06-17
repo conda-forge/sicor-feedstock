@@ -20,13 +20,6 @@ requirements:
     - pip
     - python >=3.6
     - setuptools-git
-    - gdal
-    - pytables
-    - h5py
-    - numba
-    - pyfftw
-    - pygrib
-    - scikit-learn
   run:
     - arosics >=1.2.4
     - cachetools
