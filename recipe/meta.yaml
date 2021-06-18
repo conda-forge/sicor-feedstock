@@ -19,14 +19,8 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
     - setuptools-git
-    - gdal <=3.1.2
-    - pytables
-    - h5py
-    - numba
-    - pyfftw
-    - pygrib
-    - scikit-learn
   run:
     - arosics >=1.2.4
     - cachetools
@@ -35,7 +29,7 @@ requirements:
     - dill
     - ecmwf-api-client
     - folium >=0.6.0,!=0.12.0
-    - gdal <=3.1.2
+    - gdal
     - gdown
     - geoarray
     - glymur
