@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
     - setuptools-git
   run:
     - arosics >=1.2.4
