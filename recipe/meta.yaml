@@ -1,5 +1,5 @@
 {% set name = "sicor" %}
-{% set version = "0.16.3" %}
+{% set version = "0.16.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
-  sha256: 6955ddc5e9e095d1a25e9b575ecde013019bcd47afac4197e1e420b2fff5d0ec
+  sha256: 07fd084bf7823b585888b85764ab19a6f09e2e59a3aae8693004c09b8d71cab6
 
 
 build:
@@ -19,14 +19,8 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
     - setuptools-git
-    - gdal <=3.1.2
-    - pytables
-    - h5py
-    - numba
-    - pyfftw
-    - pygrib
-    - scikit-learn
   run:
     - arosics >=1.2.4
     - cachetools
@@ -35,7 +29,7 @@ requirements:
     - dill
     - ecmwf-api-client
     - folium >=0.6.0,!=0.12.0
-    - gdal <=3.1.2
+    - gdal
     - gdown
     - geoarray
     - glymur
