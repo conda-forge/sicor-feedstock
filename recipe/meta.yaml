@@ -1,5 +1,5 @@
 {% set name = "sicor" %}
-{% set version = "0.17.4" %}
+{% set version = "0.17.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
-  sha256: d1f5dbd5a1ac8c961cc1df1652e4d32556dcc76f63615d97eca3bb7498350f27
+  sha256: d7d7f96077da3f27b5fecb55e197e80e9d505d31a92afda79bdb8520d2e690a7
 
 
 build:
@@ -24,6 +24,7 @@ requirements:
   run:
     - arosics >=1.2.4
     - cachetools
+    - cdsapi
     - cerberus
     - dicttoxml
     - dill
