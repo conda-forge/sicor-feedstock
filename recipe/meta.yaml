@@ -11,14 +11,14 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools
     - setuptools-git
   run:
@@ -52,7 +52,7 @@ requirements:
     - pyproj
     - pyrsr
     - pytables
-    - python >=3.6
+    - python >=3.8
     - py-tools-ds
     - requests
     - scikit-image
