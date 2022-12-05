@@ -11,14 +11,14 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools
     - setuptools-git
   run:
@@ -29,7 +29,6 @@ requirements:
     - dicttoxml
     - dill
     - ecmwf-api-client
-    - folium >=0.6.0,!=0.12.0
     - gdal
     - gdown
     - geoarray
@@ -52,7 +51,7 @@ requirements:
     - pyproj
     - pyrsr
     - pytables
-    - python >=3.6
+    - python >=3.8
     - py-tools-ds
     - requests
     - scikit-image
@@ -79,7 +78,7 @@ test:
     - pip
 
 about:
-  home: https://gitext.gfz-potsdam.de/EnMAP/sicor
+  home: https://git.gfz-potsdam.de/EnMAP/sicor
   summary: Sensor Independent Atmospheric Correction
   license: GPL-3.0-only
   license_file: LICENSE
