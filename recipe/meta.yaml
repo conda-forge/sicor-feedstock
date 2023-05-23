@@ -1,5 +1,5 @@
 {% set name = "sicor" %}
-{% set version = "0.18.0" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
-  sha256: 1cae64aa018e9433c8c3e211efa202e5be018cc41cdaeb1815c3c6227b0f7f2b
+  sha256: b33e4a7112355da8e837a34dc80604ed51f2015f18f057bfa81019638a193131
 
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -31,9 +31,10 @@ requirements:
     - ecmwf-api-client
     - gdal
     - gdown
-    - geoarray
+    - geoarray >=0.8.17
     - glymur
     - h5py
+    - isofit
     - iso8601
     - jsmin
     - matplotlib-base
@@ -52,11 +53,12 @@ requirements:
     - pyrsr
     - pytables
     - python >=3.8
-    - py-tools-ds
+    - py-tools-ds >=0.14.12
     - requests
-    - scikit-image
+    - scikit-image >=0.20.0
     - scikit-learn
     - scipy
+    - spectral
     - sympy
     - tqdm
 
