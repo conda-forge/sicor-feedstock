@@ -1,11 +1,11 @@
-About sicor
-===========
+About sicor-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sicor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://git.gfz-potsdam.de/EnMAP/sicor
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sicor-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sensor Independent Atmospheric Correction
 
