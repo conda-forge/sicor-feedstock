@@ -34,7 +34,7 @@ requirements:
     - geoarray >=0.8.17
     - glymur
     - h5py
-    - isofit
+    - isofit >=2.10
     - iso8601
     - jsmin
     - matplotlib-base
