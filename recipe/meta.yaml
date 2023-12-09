@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -34,7 +34,7 @@ requirements:
     - geoarray >=0.8.17
     - glymur
     - h5py
-    - isofit
+    - isofit >=2.10
     - iso8601
     - jsmin
     - matplotlib-base
@@ -75,11 +75,10 @@ test:
     - sicor.sicor
     - sicor.sicor_ac
     - sicor.sicor_enmap
-  # pip check is currently disabled due to https://github.com/conda-forge/sicor-feedstock/pull/30#issuecomment-1559059878
-  # commands:
-  #   - pip check
-  # requires:
-  #   - pip
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://git.gfz-potsdam.de/EnMAP/sicor
