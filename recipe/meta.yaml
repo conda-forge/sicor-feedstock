@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -56,7 +56,7 @@ requirements:
     - py-tools-ds >=0.14.12
     - requests
     - scikit-image >=0.20.0
-    - scikit-learn
+    - scikit-learn <=1.2.2  # due to https://git.gfz-potsdam.de/EnMAP/sicor/-/issues/107
     - scipy
     - spectral
     - sympy
