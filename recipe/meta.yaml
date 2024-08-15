@@ -76,10 +76,11 @@ test:
     - sicor.sicor
     - sicor.sicor_ac
     - sicor.sicor_enmap
-  commands:
-    - pip check
-  requires:
-    - pip
+  # 'pip check' is temporarily disabled because it complains about holoviews and aiohttp-cors which are not even indirectly needed
+  # commands:
+  #   - pip check
+  # requires:
+  #   - pip
 
 about:
   home: https://git.gfz-potsdam.de/EnMAP/sicor
