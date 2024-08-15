@@ -42,6 +42,7 @@ requirements:
     - netcdf4
     - numba
     - numpy
+    - numpy-indexed
     - openpyxl
     - pandas
     - pillow
