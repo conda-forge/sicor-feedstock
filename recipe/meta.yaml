@@ -6,19 +6,19 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
   sha256: ddf69af877b828dd38479ddb0c6070b279e76cce29a67aae406eda63a74bbc23
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - setuptools-git
   run:
@@ -53,7 +53,7 @@ requirements:
     - pyproj
     - pyrsr
     - pytables
-    - python >=3.8
+    - python >={{ python_min }}
     - py-tools-ds >=0.14.12
     - requests
     - scikit-image >=0.20.0
@@ -80,6 +80,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://git.gfz-potsdam.de/EnMAP/sicor
