@@ -1,5 +1,5 @@
 {% set name = "sicor" %}
-{% set version = "0.20.0" %}
+{% set version = "0.20.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
-  sha256: ddf69af877b828dd38479ddb0c6070b279e76cce29a67aae406eda63a74bbc23
+  sha256: fc1a7d98a791003b0fe7f0b332e043158be5ec63817d5407bf44ee458a5ab03e
 
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -37,6 +37,7 @@ requirements:
     - isofit >=2.10
     - iso8601
     - jsmin
+    - libgdal-jp2openjpeg
     - matplotlib-base
     - mpld3
     - netcdf4
@@ -57,7 +58,7 @@ requirements:
     - py-tools-ds >=0.14.12
     - requests
     - scikit-image >=0.20.0
-    - scikit-learn <=1.2.2  # due to https://git.gfz-potsdam.de/EnMAP/sicor/-/issues/107
+    - scikit-learn
     - scipy
     - spectral
     - sympy
@@ -90,5 +91,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - niklasbohn
     - danschef
+    - unbohn
