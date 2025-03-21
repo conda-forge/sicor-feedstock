@@ -144,5 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@danschef](https://github.com/danschef/)
-* [@niklasbohn](https://github.com/niklasbohn/)
+* [@unbohn](https://github.com/unbohn/)
 
