@@ -57,7 +57,7 @@ requirements:
     - py-tools-ds >=0.14.12
     - requests
     - scikit-image >=0.20.0
-    - scikit-learn <=1.2.2  # due to https://git.gfz-potsdam.de/EnMAP/sicor/-/issues/107
+    - scikit-learn
     - scipy
     - spectral
     - sympy
