@@ -19,8 +19,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
-    - setuptools-git
+    - hatchling
   run:
     - arosics >=1.2.4
     - cachetools
