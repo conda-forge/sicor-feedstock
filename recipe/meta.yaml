@@ -90,5 +90,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - niklasbohn
     - danschef
+    - unbohn
