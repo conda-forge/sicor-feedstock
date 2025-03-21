@@ -36,6 +36,7 @@ requirements:
     - isofit >=2.10
     - iso8601
     - jsmin
+    - libgdal-jp2openjpeg
     - matplotlib-base
     - mpld3
     - netcdf4
