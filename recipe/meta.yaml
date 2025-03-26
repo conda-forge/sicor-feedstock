@@ -1,5 +1,5 @@
 {% set name = "sicor" %}
-{% set version = "0.20.2" %}
+{% set version = "0.20.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
-  sha256: 71167d863fb28d57a6458ece3ecee81d1170c67f02e7adb427c60e0b9a33adae
+  sha256: 72a3f37b2f28e05dcfb136c19224352164e701c63fed29eccd9520af08230067
 
 
 build:
