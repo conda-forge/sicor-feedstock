@@ -40,7 +40,7 @@ requirements:
     - matplotlib-base
     - mpld3
     - netcdf4
-    - numba
+    - numba >=0.63  # https://github.com/conda-forge/llvmlite-feedstock/issues/109
     - numpy
     - numpy-indexed
     - openpyxl
@@ -83,7 +83,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://git.gfz-potsdam.de/EnMAP/sicor
+  home: https://git.gfz-potsdam.de.de/EnMAP/sicor
   summary: Sensor Independent Atmospheric Correction
   license: GPL-3.0-only
   license_file: LICENSE
