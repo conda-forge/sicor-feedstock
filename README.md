@@ -3,7 +3,7 @@ About sicor-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sicor-feedstock/blob/main/LICENSE.txt)
 
-Home: https://git.gfz.de.de/EnMAP/sicor
+Home: https://git.gfz.de/EnMAP/sicor
 
 Package license: GPL-3.0-only
 
