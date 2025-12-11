@@ -11,6 +11,10 @@ source:
 
 
 build:
+  entry_points:
+    - sicor_ac = sicor.cli.sicor_ac:main
+    - sicor_ecmwf = sicor.cli.sicor_ecmwf:main
+    - sicor_ac_EnMAP = sicor.cli.sicor_ac_EnMAP:main
   number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
