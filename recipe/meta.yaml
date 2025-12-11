@@ -17,7 +17,7 @@ build:
     - sicor_ac_EnMAP = sicor.cli.sicor_ac_EnMAP:main
   number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install .
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
