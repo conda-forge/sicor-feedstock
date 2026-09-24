@@ -85,6 +85,9 @@ tests:
         - sicor.sicor_ac
         - sicor.sicor_enmap
       pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Sensor Independent Atmospheric Correction
