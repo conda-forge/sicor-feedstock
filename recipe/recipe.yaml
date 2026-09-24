@@ -1,28 +1,31 @@
-{% set name = "sicor" %}
-{% set version = "0.20.5" %}
+schema_version: 1
+
+context:
+  name: sicor
+  version: "0.20.5"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sicor-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sicor-${{ version }}.tar.gz
   sha256: 15ae7abc8f3808a4a12db3a1e42824723f2ea2e06299309b4913edf0e4e304c7
 
-
 build:
-  entry_points:
-    - sicor_ac = sicor.cli.sicor_ac:main
-    - sicor_ecmwf = sicor.cli.sicor_ecmwf:main
-    - sicor_ac_EnMAP = sicor.cli.sicor_ac_EnMAP:main
-  number: 1
+  number: 2
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - sicor_ac = sicor.cli.sicor_ac:main
+      - sicor_ecmwf = sicor.cli.sicor_ecmwf:main
+      - sicor_ac_EnMAP = sicor.cli.sicor_ac_EnMAP:main
 
 requirements:
   host:
     - pip
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - hatchling
   run:
     - arosics >=1.2.4
@@ -57,7 +60,7 @@ requirements:
     - pyproj
     - pyrsr
     - pytables
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - py-tools-ds >=0.14.12
     - requests
     - scikit-image >=0.20.0
@@ -68,28 +71,29 @@ requirements:
     - tqdm
     - xlrd
 
-test:
-  imports:
-    - sicor
-    - sicor.AC.RtFo
-    - sicor.AC.RtFo_3_phases
-    - sicor.ECMWF
-    - sicor.Mask
-    - sicor.tables
-    - sicor.Tools
-    - sicor.sicor
-    - sicor.sicor_ac
-    - sicor.sicor_enmap
-  commands:
-    - pip check
-  requires:
-    - pip
+tests:
+  - python:
+      imports:
+        - sicor
+        - sicor.AC.RtFo
+        - sicor.AC.RtFo_3_phases
+        - sicor.ECMWF
+        - sicor.Mask
+        - sicor.tables
+        - sicor.Tools
+        - sicor.sicor
+        - sicor.sicor_ac
+        - sicor.sicor_enmap
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
-  home: https://git.gfz.de/EnMAP/sicor
   summary: Sensor Independent Atmospheric Correction
   license: GPL-3.0-only
   license_file: LICENSE
+  homepage: https://git.gfz.de/EnMAP/sicor
 
 extra:
   recipe-maintainers:
