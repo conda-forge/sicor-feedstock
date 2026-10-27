@@ -63,7 +63,7 @@ requirements:
     - python >=${{ python_min }}
     - py-tools-ds >=0.14.12
     - requests
-    - scikit-image >=0.20.0
+    - scikit-image >=0.21.0
     - scikit-learn
     - scipy
     - spectral
