@@ -42,6 +42,7 @@ requirements:
     - h5py
     - isofit >=2.10
     - iso8601
+    - joblib
     - jsmin
     - libgdal-jp2openjpeg
     - matplotlib-base
@@ -49,7 +50,6 @@ requirements:
     - netcdf4
     - numba >=0.63  # https://github.com/conda-forge/llvmlite-feedstock/issues/109
     - numpy
-    - numpy-indexed
     - openpyxl
     - pandas
     - pillow
@@ -58,7 +58,7 @@ requirements:
     - pygrib
     - pyprind
     - pyproj
-    - pyrsr
+    - pyrsr >=0.8.0
     - pytables
     - python >=${{ python_min }}
     - py-tools-ds >=0.14.12
