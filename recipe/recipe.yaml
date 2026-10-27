@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sicor
-  version: "0.20.5"
+  version: "0.21.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sicor-${{ version }}.tar.gz
-  sha256: 15ae7abc8f3808a4a12db3a1e42824723f2ea2e06299309b4913edf0e4e304c7
+  sha256: 806d65908e25d99cad2a6b42139c6d0e1cc77d843cabf51df395d9b270cfd2d4
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -42,6 +42,7 @@ requirements:
     - h5py
     - isofit >=2.10
     - iso8601
+    - joblib
     - jsmin
     - libgdal-jp2openjpeg
     - matplotlib-base
@@ -49,7 +50,6 @@ requirements:
     - netcdf4
     - numba >=0.63  # https://github.com/conda-forge/llvmlite-feedstock/issues/109
     - numpy
-    - numpy-indexed
     - openpyxl
     - pandas
     - pillow
@@ -58,12 +58,12 @@ requirements:
     - pygrib
     - pyprind
     - pyproj
-    - pyrsr
+    - pyrsr >=0.8.0
     - pytables
     - python >=${{ python_min }}
     - py-tools-ds >=0.14.12
     - requests
-    - scikit-image >=0.20.0
+    - scikit-image >=0.21.0
     - scikit-learn
     - scipy
     - spectral
