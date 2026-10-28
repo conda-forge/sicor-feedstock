@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sicor
-  version: "0.21.0"
+  version: "0.21.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sicor-${{ version }}.tar.gz
-  sha256: 806d65908e25d99cad2a6b42139c6d0e1cc77d843cabf51df395d9b270cfd2d4
+  sha256: ab8a797199c597a8092907cd6f0896a630e8e902d6832e9a8643d91cb0015578
 
 build:
   number: 0
